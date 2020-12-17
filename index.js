@@ -42,7 +42,17 @@ class Airplane {
   */
   
  class Person {
-    
+    constructor(name, age) {
+      this.name = name;
+      this.age = age;
+      this.stomach = [];
+    }
+    eat() {
+
+    }
+    poop(){
+
+    }
   }
   
   /*
@@ -60,9 +70,20 @@ class Airplane {
   */
   
  class Car {
-    
+    constructor(model, milesPerGallon){
+    this.model = model;
+    this.milesPerGallon = milesPerGallon;
+    this.tank = 0
+    this.odometer = 0
   }
-  
+  drive(){
+
+  }
+
+  fill(){
+
+  }
+}
   /*
     TASK 3
       - Write a Lambdasian class.
@@ -76,7 +97,11 @@ class Airplane {
           + {name} and {location} of course come from the instance's own properties.
   */
  class Lambdasian {
-    
+    constructor(lambdaA){
+      this.name = lambdaA.name;
+      this.age = lambdaA.age;
+      this.location = lambdaA.location;
+    }
   }
   
   /*
