@@ -47,7 +47,7 @@ class Airplane {
       this.age = age;
       this.stomach = [];
     }
-    eat() {
+    eat(someFood) {
 
     }
     poop(){
@@ -77,11 +77,11 @@ class Airplane {
     this.odometer = 0
   }
   fill(gallons){
-    this.tank += gallons
+     this.tank += gallons
       }
 
   drive(distance){
-  const usedFuel = this.milesPerGallon/ usedFuel
+  const usedFuel = distance/ this.milesPerGallon
   const maxMiles = this.milesPerGallon *this.tank
  this.odometer += distance
  
@@ -133,17 +133,10 @@ class Airplane {
           + `grade` receives a `student` object and a `subject` string as arguments and returns '{student.name} receives a perfect score on {subject}'
   */
  class Instructor extends Lambdasian{
-constructor(lambdaB){
+   constructor(){
+     this.specialty = this.specialty
 
-  this.specialty = redux;
-  this.favLanguage = Javascript;
-  this.catchPhrase = "Dont forget the homies"
-}
-demo(){
-
-}
-grade(){
-
+  
 }
  }
   /*
