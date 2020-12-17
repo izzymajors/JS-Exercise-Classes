@@ -38,3 +38,4 @@ There are stretch goals found throughout `index.js`. Complete these after you ha
 ## Submission format
 
 Please see canvas for cohort specific submission instructions
+Jonathan Majors
