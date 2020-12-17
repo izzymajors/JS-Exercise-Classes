@@ -47,13 +47,16 @@ class Airplane {
       this.age = age;
       this.stomach = [];
     }
-    eat(someFood) {
+    eat(food) {
 
     }
+
     poop(){
 
     }
-  }
+ }
+   
+  
   
   /*
     TASK 2
@@ -116,6 +119,9 @@ class Airplane {
       this.age = lambdaA.age;
       this.location = lambdaA.location;
     }
+    speak(){
+      console.log(`Hello my name is ${this.name}, I am from ${this.location}.`)
+    }
   }
   
   /*
@@ -132,13 +138,14 @@ class Airplane {
           + `demo` receives a `subject` string as an argument and returns the phrase 'Today we are learning about {subject}' where subject is the param passed in.
           + `grade` receives a `student` object and a `subject` string as arguments and returns '{student.name} receives a perfect score on {subject}'
   */
- class Instructor extends Lambdasian{
-   constructor(){
-     this.specialty = this.specialty
-
+ class Instructor extends Lambdasian {
   
-}
- }
+    super({name: name, age: age, location: location}){
+
+    }
+
+  }
+
   /*
     TASK 5
       - Write a Student class extending Lambdasian.
@@ -173,7 +180,9 @@ class Airplane {
           + `debugsCode` a method that takes in a student object and a subject and returns `{name} debugs {student.name}'s code on {subject}`
   */
  class ProjectManager extends Instructor{
-     constructor(){
+     constructor(projectMan){
+       this.grade = gradeClassName;
+       this.favInstruc = favInstructor;
 
      }
  }
