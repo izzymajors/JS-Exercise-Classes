@@ -76,12 +76,26 @@ class Airplane {
     this.tank = 0
     this.odometer = 0
   }
-  drive(){
+  fill(gallons){
+    this.tank += gallons
+      }
 
+  drive(distance){
+  const usedFuel = this.milesPerGallon/ usedFuel
+  const maxMiles = this.milesPerGallon *this.tank
+ this.odometer += distance
+ 
+ if(distance > maxMiles){
+   this.tank = 0;
+   this.odometer = maxMiles
+
+  } else if(distance <= maxMiles){
+    this.tank -= usedFuel
+    this.odometer = distance
   }
-
-  fill(){
-
+  if (distance > maxMiles){
+    return ` I ran out of fuel at ${maxMiles} Miles!`
+   };
   }
 }
   /*
@@ -119,11 +133,11 @@ class Airplane {
           + `grade` receives a `student` object and a `subject` string as arguments and returns '{student.name} receives a perfect score on {subject}'
   */
  class Instructor extends Lambdasian{
-constructor(obj){
-  super(obj);
-  this.specialty = obj.specialty;
-  this.favLanguage = obj.favLanguage;
-  this.catchPhrase = Obj.catchPhrase
+constructor(lambdaB){
+
+  this.specialty = redux;
+  this.favLanguage = Javascript;
+  this.catchPhrase = "Dont forget the homies"
 }
 demo(){
 
@@ -167,7 +181,7 @@ grade(){
   */
  class ProjectManager extends Instructor{
      constructor(){
-       
+
      }
  }
   /*
