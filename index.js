@@ -207,8 +207,8 @@ this.stomach = 0;
  class ProjectManager extends Instructor{
      constructor(att4){
        super(att4)
-       this.grade = att4.gradeClassName;
-       this.favInstruc = att4.favInstructor;
+       this.gradClassName = att4.gradClassName;
+       this.favInstructor = att4.favInstructor;
 
      }
      standUp(){
