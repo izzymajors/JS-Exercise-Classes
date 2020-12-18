@@ -139,13 +139,24 @@ this.stomach = 0;
           + `demo` receives a `subject` string as an argument and returns the phrase 'Today we are learning about {subject}' where subject is the param passed in.
           + `grade` receives a `student` object and a `subject` string as arguments and returns '{student.name} receives a perfect score on {subject}'
   */
- class Instructor extends Lambdasian {
+      
   
-   // super({name: name, age: age, location: location}){
-
-    
+ class Instructor extends Lambdasian {
+  constructor(att2){
+    super(att2);
+    this.specialty = att2.specialty;
+    this.favLanguage= att2.favLanguage;
+    this.catchPhrase = att2.catchPhrase;
+  }
+  demo(){
 
   }
+  grade(){
+
+  }
+ }
+
+  
 
   /*
     TASK 5
@@ -194,9 +205,16 @@ this.stomach = 0;
           + `debugsCode` a method that takes in a student object and a subject and returns `{name} debugs {student.name}'s code on {subject}`
   */
  class ProjectManager extends Instructor{
-     constructor(projectMan){
-       this.grade = gradeClassName;
-       this.favInstruc = favInstructor;
+     constructor(att4){
+       super(att4)
+       this.grade = att4.gradeClassName;
+       this.favInstruc = att4.favInstructor;
+
+     }
+     standUp(){
+
+     }
+     debugsCode(){
 
      }
  }
