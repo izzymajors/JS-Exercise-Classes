@@ -205,18 +205,20 @@ this.stomach = 0;
           + `debugsCode` a method that takes in a student object and a subject and returns `{name} debugs {student.name}'s code on {subject}`
   */
  class ProjectManager extends Instructor{
-     constructor(att4){
-       super(att4)
-       this.gradClassName = att4.gradClassName;
-       this.favInstructor = att4.favInstructor;
+     constructor(att2){
+       super(att2)
+       this.gradClassName = att2.gradClassName;
+       this.favInstructor = att2.favInstructor;
 
      }
+     
      standUp(){
 
      }
      debugsCode(){
 
      }
+     
  }
   /*
     STRETCH PROBLEM (no tests!)
