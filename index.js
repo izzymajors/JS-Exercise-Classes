@@ -48,11 +48,11 @@ class Airplane {
       this.stomach = [];
     }
     eat(food) {
-
+this.stomach += food
     }
 
     poop(){
-
+this.stomach = 0;
     }
  }
    
@@ -114,12 +114,13 @@ class Airplane {
           + {name} and {location} of course come from the instance's own properties.
   */
  class Lambdasian {
-    constructor(lambdaA){
-      this.name = lambdaA.name;
-      this.age = lambdaA.age;
-      this.location = lambdaA.location;
+    constructor(yoda){
+      this.name = yoda.name;
+      this.age = yoda.age;
+      this.location = yoda.location;
     }
     speak(){
+      
       console.log(`Hello my name is ${this.name}, I am from ${this.location}.`)
     }
   }
@@ -140,9 +141,9 @@ class Airplane {
   */
  class Instructor extends Lambdasian {
   
-    super({name: name, age: age, location: location}){
+   // super({name: name, age: age, location: location}){
 
-    }
+    
 
   }
 
@@ -162,6 +163,19 @@ class Airplane {
           + `sprintChallenge` similar to PRAssignment but returns `student.name has begun sprint challenge on {subject}`
   */
  class Student extends Lambdasian{
+    constructor(att3){
+      super(att3);
+      this.previousBackground = att3.previousBackground;
+      this.className = att3.className;
+      this.favSubjects = att3.favSubjects;
+    }
+    listSubjects(){
+      return `Loving ${this.favSubjects}`
+
+    }
+    PRAssignment(subject){
+         return `${this.name} has summited a PR for ${subject}`
+    }
     
 
      }
